@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Disaster Recovery Plans - Medical Research Facility</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="LabMed Logo" class="site-logo">
+        <div class="header-text">
+            <h1>Medical Research Facility</h1>
+            <p>IT Standard Operating Procedures Portal</p>
+        </div>
+    </header>
+
+    <nav>
+    <input type="checkbox" id="menu-btn" class="menu-btn">
+    <label for="menu-btn" class="menu-icon">&#9776; Menu</label>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="security.html">Security Policy</a></li>
+        <li><a href="acceptable-use.html">Acceptable Use</a></li>
+        <li><a href="acquisition.html">Acquisition</a></li>
+        <li><a href="helpdesk.html">Service Desk</a></li>
+        <li><a href="disaster-recovery.html">Disaster Recovery</a></li>
+        <li><a href="contact.html">IT Contacts</a></li>
+    </ul>
+    <div class="search-form">
+        <input type="text" placeholder="Search SOPs..." id="search-input">
+        <button type="button">Search</button>
+    </div>
+</nav>
+
+    <div class="container">
+        <h2>Disaster Recovery Plans</h2>
+        <p>Disaster recovery is concerned with restoring IT services after a serious disruption. A useful recovery plan should identify important systems, recovery priorities, responsible staff, backup arrangements and the steps required to restore services.</p>
+        </ul>
+
+       <h3>Disaster Recovery Scenarios and Action Plans</h3>
+        <table>
+            <tr>
+                <th>Disaster Scenario</th>
+                <th>Impacted Infrastructure</th>
+                <th>Recommended Action & Recovery Plan</th>
+            </tr>
+            <tr>
+                <td><b>Primary Uplink / Network Cable Failure</b></td>
+                <td>Core-to-Building connectivity</td>
+                <td><b>RSTP Auto-Failover:</b> Rapid Spanning Tree Protocol (RSTP) automatically unblocks secondary redundant links between building switches and the Core Switch within &lt;2 seconds.</td>
+            </tr>
+            <tr>
+                <td><b>Core Layer 3 Switch Hardware Failure</b></td>
+                <td>Facility-wide inter-VLAN routing and central DHCP</td>
+                <td><strong>Redundant Core Deployment:</strong> Implement High Availability using Hot Standby Router Protocol (HSRP) / Virtual Router Redundancy Protocol (VRRP) with a redundant secondary Core Switch.</td>
+            </tr>
+            <tr>
+                <td><b>Research Management Server Outage</b></td>
+                <td>Central Research Management Software (192.168.10.10)</td>
+                <td><b>Server Failover & Backups:</b> Daily off-site automated backups and hot-standby virtual machine replication to allow instant failover.</td>
+            </tr>
+            <tr>
+                <td><b>Facility Power Outage/Failure</b></td>
+                <td>Core Server Room & Floor Switches</td>
+                <td><b>UPS & Generator Backup:</b> Server room and switch racks equipped with Uninterruptible Power Supply UPS units providing 30 minutes runtime, backed by an automated diesel generator.</td>
+            </tr>
+            <tr>
+                <td><b>Physical Cyber Attack or ASA Firewall Breach</b></td>
+                <td>ISP WAN / External VPN access</td>
+                <td><b>Automated ASA Failover & Isolated Subnets:</b> ASA Firewall isolates internal subnets (192.168.10.0–40.0/24) automatically, terminating compromised VPN sessions.</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> 
+            <a href="security.html">Security Policy</a>
+            <a href="acceptable-use.html">Acceptable Use</a> 
+            <a href="acquisition.html">Acquisition</a>
+            <a href="helpdesk.html">Service Desk</a>
+            <a href="disaster-recovery.html">Disaster Recovery</a>
+            <a href="contact.html">IT Contacts</a>
+        </div>
+        <p>&copy; 2026 Medical Research Facility</p>
+    </footer>
+
+</body>
+</html>

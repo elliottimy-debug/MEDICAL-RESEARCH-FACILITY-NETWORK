@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medical Research Facility - IT SOP Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.link-card {
+  aspect-ratio: 1 / 1;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  color: #1e40af;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.link-card:hover {
+  background: #1e40af;
+  color: white;
+  filter: brightness(0.8);
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+
+   <header>
+        <img src="images/logo.png" alt="LabMed Logo" class="site-logo">
+        <div class="header-text">
+            <h1>Medical Research Facility</h1>
+            <p>IT Standard Operating Procedures Portal</p>
+        </div>
+    </header>
+
+   <nav>
+    <input type="checkbox" id="menu-btn" class="menu-btn">
+    <label for="menu-btn" class="menu-icon">&#9776; Menu</label>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="security.html">Security Policy</a></li>
+        <li><a href="acceptable-use.html">Acceptable Use</a></li>
+        <li><a href="acquisition.html">Acquisition</a></li>
+        <li><a href="helpdesk.html">Service Desk</a></li>
+        <li><a href="disaster-recovery.html">Disaster Recovery</a></li>
+        <li><a href="contact.html">IT Contacts</a></li>
+    </ul>
+    <div class="search-form">
+        <input type="text" placeholder="Search SOPs..." id="search-input">
+        <button type="button">Search</button>
+    </div>
+</nav>
+
+    <div class="container">
+        <h2>Welcome to the IT SOP Portal</h2>
+        <p>This website contains all the standard operating procedures, policies, and emergency guidelines for the administrative staff and laboratory researchers at the medical research facility. Please use the navigation above or the quick links below to find the procedure you need.</p>
+
+        <h3>Quick Links</h3>
+        <div class="quick-links-grid">
+  <a href="security.html" class="link-card">
+    <span>View IT Security Policy Guidelines</span>
+  </a>
+  <a href="acceptable-use.html" class="link-card">
+    <span>View Acceptable Use Policy</span>
+  </a>
+  <a href="acquisition.html" class="link-card">
+    <span>View IT Acquisition & Approval Procedures</span>
+  </a>
+  <a href="helpdesk.html" class="link-card">
+    <span>View Service Desk / Help Desk Procedures</span>
+  </a>
+  <a href="disaster-recovery.html" class="link-card">
+    <span>View Disaster Recovery Plans</span>
+  </a>
+  <a href="contact.html" class="link-card">
+    <span>View IT Department Staff Structure & Contacts</span>
+  </a>
+</div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> 
+            <a href="security.html">Security Policy</a> 
+            <a href="acceptable-use.html">Acceptable Use</a> 
+            <a href="acquisition.html">Acquisition</a> 
+            <a href="helpdesk.html">Service Desk</a>
+            <a href="disaster-recovery.html">Disaster Recovery</a>
+            <a href="contact.html">IT Contacts</a>
+        </div>
+        <p>&copy; 2026 Medical Research Facility</p>
+    </footer>
+
+</body>
+</html>
